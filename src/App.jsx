@@ -1,5 +1,5 @@
 import "./App.css";
-import PhoneOTPLogin from "./components/PhoneOTPLogin";
+import PhoneOTPLogin from "./components/phone-login";
 
 function App() {
   return (
