@@ -4,6 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import OTPInput from "./otp-input";
 
 const PhoneOTPLogin = () => {
+
   const [phoneNumber, setPhoneNumber] = useState("");
   const [showOTPInput, setShowOTPInput] = useState(false);
 
@@ -24,7 +25,7 @@ const PhoneOTPLogin = () => {
     setPhoneNumber(e.target.value);
   };
 
-  const onOtpSubmit  = (otp) => {
+  const onOtpSubmit = (otp) => {
     console.log("Login Successfully", otp);
   };
 
@@ -45,7 +46,7 @@ const PhoneOTPLogin = () => {
       ) : (
         <div>
           <p>OTP Is Send to the Number : {phoneNumber}</p>
-          <OTPInput length={4} onOtpSubmit ={onOtpSubmit }></OTPInput>
+          <OTPInput length={4} onOtpSubmit={onOtpSubmit}></OTPInput>
         </div>
       )}
     </div>
